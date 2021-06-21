@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*-------------------------------------------------
+Author : James
+Create date : 2019-10-04
+-------------------------------------------------*/
+#header {
+  height: 100px;
+  border-bottom: 1px solid #ccc;
+}
+#header::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#header .logo {
+  float: left;
+  margin-top: 15px;
+}
+
+#header #gnb {
+  float: right;
+}
+#header #gnb > li {
+  display: inline-block;
+}
+#header #gnb > li > a{ 
+  font-size: 2rem;
+  letter-spacing: -.05em;
+  color: #6f6f6f;
+  display: block;
+  padding: 50px 60px 0;
+}
+#header #gnb > li.is-active > a {
+  color: #00b5ef;
+}
+

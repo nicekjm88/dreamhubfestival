@@ -1,0 +1,314 @@
+@charset "utf-8";
+/*-------------------------------------------------
+Author : James
+Create date : 2019-10-04
+-------------------------------------------------*/
+#wrap {
+  overflow-x: hidden;
+}
+#sub {
+  padding-top: 120px;
+}
+#sub.sub01 {
+  background: url('../images/bg_sub01.png') center top no-repeat;
+  overflow: hidden;
+}
+
+.sub-title {
+  text-align: center;
+  color: #666;
+  font-size: 6rem;
+  margin-bottom: 110px;
+}
+
+
+/* 출연진 소개 */
+.modal-content {
+  margin-top: 110px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.modal-content::after {
+  content: '';
+  width: 500%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: -250%;
+  background-color: #efefef;
+}
+
+.modal-content:first-of-type {
+  margin-top: 0;
+}
+.modal-content:last-of-type {
+  border: none;  
+}
+.modal-content .name {
+  color: #00b5ef;
+  font-size: 6rem;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+.modal-content .name strong {
+  font-weight: 700;
+}
+.modal-content .desc {
+  font-size: 2.8rem;
+  color: #000;
+  font-weight: 300;
+  margin-bottom: 90px;
+}
+.external-link ul {
+  position: relative;
+  padding-top: 20px;
+}
+.external-link ul::before {
+  content: '';
+  width: 22px;
+  height: 2px;
+  background-color: #22a0ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.external-link ul > li strong {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 500;
+  display: block;
+}
+.external-link ul > li {
+  margin-bottom: 20px;
+}
+.external-link ul > li > a {
+  color: #666;
+  font-style: 1.4rem;
+  font-weight: 300;
+}
+.external-link ul > li > a:hover {
+  text-decoration: underline;
+}
+.modal-content.type1 {
+  background: url('../images/bg_type1_wide.png') bottom right no-repeat;
+  height: 530px;
+}
+.modal-content.type2 {
+  background: url('../images/bg_type2_wide.png') bottom left no-repeat;
+  padding-left: 600px;
+}
+.modal-content.type3 {
+  background: url('../images/bg_type3-1.png') bottom right no-repeat;
+  padding-right: 380px;
+}
+.modal-content.type4 {
+  background: url('../images/bg_type3-2.png') bottom left no-repeat;
+  padding-left: 600px;
+  height: 520px;
+}
+.modal-content.type5 {
+  background: url('../images/bg_type5_wide.png') bottom right no-repeat;
+}
+.modal-content.type6 {
+  background: url('../images/bg_type6_wide.png') bottom right no-repeat;
+  height: 530px;
+}
+
+/* 애터미 E&M */
+.introduce {
+  margin-bottom: 200px;
+  padding-left: 110px;
+}
+.introduce .sentence {
+  padding-right: 40%;
+  position: relative;
+}
+.introduce .sentence p{
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin-top: 50px;
+  line-height: 1.6;
+  word-break: keep-all;
+  letter-spacing: -.05em;
+}
+.introduce .sentence strong {
+  color: #00b5ef;
+}
+
+.introduce .sentence .logo {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-right: -350px;
+}
+
+#footer {
+  background-color: #f2f2f2;
+  padding: 44px 0;
+}
+#footer .footer-wrap {
+  width: 680px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#footer .logo {
+  float: left;
+  width: 50%;
+  border-right: 1px solid #ccc;
+  text-align: left;
+}
+#footer .contact-us {
+  float: right;
+  width: 50%;
+  padding-left: 70px;
+  padding-top: 15px;
+  text-align: left;
+}
+#footer .contact-us strong {
+  font-size: 1.8rem;
+  color: #6f6f6f;
+  font-weight: 500;
+}
+#footer .contact-us .external-link {
+  color: #999;
+  margin-top: 5px;  
+}
+#footer .contact-us .external-link > a {
+  display: inline-block;
+  padding-left: 25px;
+  background: url('../images/i_insta_dark.png') 0 0 no-repeat;
+  margin-left: 10px;
+  height: 20px;
+  line-height: 1;
+}
+#footer .contact-us .external-link > a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media(max-width: 767px) {
+  #sub {
+    padding-top: 60px;
+  }
+  .sub-title {
+    font-size: 3rem;
+    margin-bottom: 55px;
+  }
+  .modal-content {
+    margin-top: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .modal-content .name strong {
+    display: block;
+  }
+  .modal-content .name {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  .modal-content .desc {
+    font-size: 1.6rem;
+    margin-bottom: 45px;
+  }
+  .modal-content.type1 {
+    background-size: 150px;
+    height: inherit;
+  }
+  .modal-content.type2 {
+    padding-left: 15px;
+    background-size: 150px;
+    background-position: bottom right;
+  }
+  .modal-content.type3 {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-size: 140px;
+    background-position: bottom right;
+  }
+  .modal-content.type3 .desc{
+    margin-bottom: 0;
+    margin-right: 140px;
+  }
+  .modal-content.type4 {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-size: 150px;
+    background-position: bottom right;
+    height: inherit;
+  }
+  .modal-content.type4 .desc{
+    margin-bottom: 0;
+    margin-right: 140px;
+  }  
+  .modal-content.type4 .desc br {
+    display: none;
+  }
+  .modal-content.type5 {
+    background-size: 180px;
+  }
+  .modal-content.type5 br {
+    display: none;
+  }
+  .modal-content.type6 {
+    background-size: 150px;
+    height: inherit;    
+  }  
+  .modal-content.type6 br {
+    display: none;
+  }
+  .introduce {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 100px;    
+    min-height: 650px;
+  }
+
+  .introduce img {
+    max-width: 80%;
+  }
+  .introduce .sentence {
+    padding-right: 0;
+  }
+  .introduce .sentence p {
+    font-size: 1.6rem;
+    margin-top: 25px;
+  }  
+  .introduce .sentence .logo {
+    width: calc(185px / 2);
+    margin-right: -170px;
+    bottom: -40px;
+  }  
+}
+
+@media(max-width: 680px) {
+  #footer .footer-wrap {
+    width: 100%;
+    zoom: .6;
+    padding: 0 30px;
+  }
+  #footer .contact-us {
+    padding-left: 30px;
+  }
+}
+
+@media(max-width: 413px) {
+  #footer .footer-wrap {
+    zoom: .5;
+  }
+  #footer .logo {
+    width: 45%;
+    padding-right: 5%;
+  }
+  #footer .logo img {
+    max-width: 100%;
+  }
+  #footer .contact-us {
+    padding-left: 0;
+  }
+}
